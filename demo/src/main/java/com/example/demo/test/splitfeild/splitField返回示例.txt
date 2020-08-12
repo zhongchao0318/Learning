@@ -1,0 +1,497 @@
+[
+    {
+        "field": "id",
+        "isshow": false,
+        "value": "0field"
+    },
+    {
+        "field": "setid",
+        "isshow": false,
+        "value": "1field"
+    },
+    {
+        "field": "deptid",
+        "isshow": false,
+        "value": "2field"
+    },
+    {
+        "field": "emplid",
+        "isshow": false,
+        "value": "3field"
+    },
+    {
+        "field": "name",
+        "isshow": false,
+        "value": "4field"
+    },
+    {
+        "field": "accountecid",
+        "isshow": false,
+        "value": "5field"
+    },
+    {
+        "field": "hiredt",
+        "isshow": false,
+        "value": "6field"
+    },
+    {
+        "field": "fixsal",
+        "isshow": false,
+        "value": "7field"
+    },
+    {
+        "field": "basesal",
+        "isshow": false,
+        "value": "8field"
+    },
+    {
+        "field": "posnsal",
+        "isshow": false,
+        "value": "9field"
+    },
+    {
+        "field": "tlvlsal",
+        "isshow": false,
+        "value": "10field"
+    },
+    {
+        "field": "othsal",
+        "isshow": false,
+        "value": "11field"
+    },
+    {
+        "field": "alowcollsal",
+        "isshow": false,
+        "value": "12field"
+    },
+    {
+        "field": "ngsfalowsal",
+        "isshow": false,
+        "value": "13field"
+    },
+    {
+        "field": "ltngalowsal",
+        "isshow": false,
+        "value": "14field"
+    },
+    {
+        "field": "posnalowsal",
+        "isshow": false,
+        "value": "15field"
+    },
+    {
+        "field": "frthalowsal",
+        "isshow": false,
+        "value": "16field"
+    },
+    {
+        "field": "cashalowsal",
+        "isshow": false,
+        "value": "17field"
+    },
+    {
+        "field": "eplfalowsal",
+        "isshow": false,
+        "value": "18field"
+    },
+    {
+        "field": "epacalowsal",
+        "isshow": false,
+        "value": "19field"
+    },
+    {
+        "field": "nwstalowsal",
+        "isshow": false,
+        "value": "20field"
+    },
+    {
+        "field": "probalowsal",
+        "isshow": false,
+        "value": "21field"
+    },
+    {
+        "field": "agenalowsal",
+        "isshow": false,
+        "value": "22field"
+    },
+    {
+        "field": "concalowsal",
+        "isshow": false,
+        "value": "23field"
+    },
+    {
+        "field": "hgtpalowsal",
+        "isshow": false,
+        "value": "24field"
+    },
+    {
+        "field": "fkltalowsal",
+        "isshow": false,
+        "value": "25field"
+    },
+    {
+        "field": "dbhdalowsal",
+        "isshow": false,
+        "value": "26field"
+    },
+    {
+        "field": "mealalowsal",
+        "isshow": false,
+        "value": "27field"
+    },
+    {
+        "field": "frsbalowsal",
+        "isshow": false,
+        "value": "28field"
+    },
+    {
+        "field": "lwtpalowsal",
+        "isshow": false,
+        "value": "29field"
+    },
+    {
+        "field": "suptalowsal",
+        "isshow": false,
+        "value": "30field"
+    },
+    {
+        "field": "slbsalowsal",
+        "isshow": false,
+        "value": "31field"
+    },
+    {
+        "field": "dppbalowsal",
+        "isshow": false,
+        "value": "32field"
+    },
+    {
+        "field": "prasalowsal",
+        "isshow": false,
+        "value": "33field"
+    },
+    {
+        "field": "spopalowsal",
+        "isshow": false,
+        "value": "34field"
+    },
+    {
+        "field": "innoalowsal",
+        "isshow": false,
+        "value": "35field"
+    },
+    {
+        "field": "fglgalowsal",
+        "isshow": false,
+        "value": "36field"
+    },
+    {
+        "field": "oth1alowsal",
+        "isshow": false,
+        "value": "37field"
+    },
+    {
+        "field": "oth2alowsal",
+        "isshow": false,
+        "value": "38field"
+    },
+    {
+        "field": "oth3alowsal",
+        "isshow": false,
+        "value": "39field"
+    },
+    {
+        "field": "oth4alowsal",
+        "isshow": false,
+        "value": "40field"
+    },
+    {
+        "field": "oth5alowsal",
+        "isshow": false,
+        "value": "41field"
+    },
+    {
+        "field": "oth6alowsal",
+        "isshow": false,
+        "value": "42field"
+    },
+    {
+        "field": "bonscollsal",
+        "isshow": false,
+        "value": "43field"
+    },
+    {
+        "field": "cashbonssal",
+        "isshow": false,
+        "value": "44field"
+    },
+    {
+        "field": "slptbonssal",
+        "isshow": false,
+        "value": "45field"
+    },
+    {
+        "field": "clpfbonssal",
+        "isshow": false,
+        "value": "46field"
+    },
+    {
+        "field": "gppubonssal",
+        "isshow": false,
+        "value": "47field"
+    },
+    {
+        "field": "flotbonssal",
+        "isshow": false,
+        "value": "48field"
+    },
+    {
+        "field": "ivprbonssal",
+        "isshow": false,
+        "value": "49field"
+    },
+    {
+        "field": "qtpfbonssal",
+        "isshow": false,
+        "value": "50field"
+    },
+    {
+        "field": "flatbonssal",
+        "isshow": false,
+        "value": "51field"
+    },
+    {
+        "field": "cscpbonssal",
+        "isshow": false,
+        "value": "52field"
+    },
+    {
+        "field": "spshbonssal",
+        "isshow": false,
+        "value": "53field"
+    },
+    {
+        "field": "oth1bonssal",
+        "isshow": false,
+        "value": "54field"
+    },
+    {
+        "field": "oth2bonssal",
+        "isshow": false,
+        "value": "55field"
+    },
+    {
+        "field": "oth3bonssal",
+        "isshow": false,
+        "value": "56field"
+    },
+    {
+        "field": "psf1bonssal",
+        "isshow": false,
+        "value": "57field"
+    },
+    {
+        "field": "psf2bonssal",
+        "isshow": false,
+        "value": "58field"
+    },
+    {
+        "field": "psf3bonssal",
+        "isshow": false,
+        "value": "59field"
+    },
+    {
+        "field": "pac1bonssal",
+        "isshow": false,
+        "value": "60field"
+    },
+    {
+        "field": "pac2bonssal",
+        "isshow": false,
+        "value": "61field"
+    },
+    {
+        "field": "pac3bonssal",
+        "isshow": false,
+        "value": "62field"
+    },
+    {
+        "field": "cumnovtmsal",
+        "isshow": false,
+        "value": "63field"
+    },
+    {
+        "field": "wkdyovtmsal",
+        "isshow": false,
+        "value": "64field"
+    },
+    {
+        "field": "wkndovtmsal",
+        "isshow": false,
+        "value": "65field"
+    },
+    {
+        "field": "hoilovtmsal",
+        "isshow": false,
+        "value": "66field"
+    },
+    {
+        "field": "lavedetcsal",
+        "isshow": false,
+        "value": "67field"
+    },
+    {
+        "field": "aslvdetcsal",
+        "isshow": false,
+        "value": "68field"
+    },
+    {
+        "field": "sklvdetcsal",
+        "isshow": false,
+        "value": "69field"
+    },
+    {
+        "field": "anlvdetcsal",
+        "isshow": false,
+        "value": "70field"
+    },
+    {
+        "field": "ngwkdetcsal",
+        "isshow": false,
+        "value": "71field"
+    },
+    {
+        "field": "accdincmsal",
+        "isshow": false,
+        "value": "72field"
+    },
+    {
+        "field": "servincmsal",
+        "isshow": false,
+        "value": "73field"
+    },
+    {
+        "field": "ohdicollsal",
+        "isshow": false,
+        "value": "74field"
+    },
+    {
+        "field": "ecnccompsal",
+        "isshow": false,
+        "value": "75field"
+    },
+    {
+        "field": "medlcompsal",
+        "isshow": false,
+        "value": "76field"
+    },
+    {
+        "field": "othesuplsal",
+        "isshow": false,
+        "value": "77field"
+    },
+    {
+        "field": "othedetcsal",
+        "isshow": false,
+        "value": "78field"
+    },
+    {
+        "field": "slirpersal",
+        "isshow": false,
+        "value": "79field"
+    },
+    {
+        "field": "paccpersal",
+        "isshow": false,
+        "value": "80field"
+    },
+    {
+        "field": "annllumpsal",
+        "isshow": false,
+        "value": "81field"
+    },
+    {
+        "field": "thirpaysal",
+        "isshow": false,
+        "value": "82field"
+    },
+    {
+        "field": "annlbonssal",
+        "isshow": false,
+        "value": "83field"
+    },
+    {
+        "field": "bftxsumtaxsal",
+        "isshow": false,
+        "value": "84field"
+    },
+    {
+        "field": "pertsumtaxsal",
+        "isshow": false,
+        "value": "85field"
+    },
+    {
+        "field": "persincmtaxsal",
+        "isshow": false,
+        "value": "86field"
+    },
+    {
+        "field": "accdincmtaxsal",
+        "isshow": false,
+        "value": "87field"
+    },
+    {
+        "field": "servtaxsal",
+        "isshow": false,
+        "value": "88field"
+    },
+    {
+        "field": "annlbonstaxsal",
+        "isshow": false,
+        "value": "89field"
+    },
+    {
+        "field": "aftxindcsal",
+        "isshow": false,
+        "value": "90field"
+    },
+    {
+        "field": "ecnccompntxsal",
+        "isshow": false,
+        "value": "91field"
+    },
+    {
+        "field": "aftxincmsal",
+        "isshow": false,
+        "value": "92field"
+    },
+    {
+        "field": "aftxdetcsal",
+        "isshow": false,
+        "value": "93field"
+    },
+    {
+        "field": "tradsal",
+        "isshow": false,
+        "value": "94field"
+    },
+    {
+        "field": "taiaifundsal",
+        "isshow": false,
+        "value": "95field"
+    },
+    {
+        "field": "netpaysal",
+        "isshow": false,
+        "value": "96field"
+    },
+    {
+        "field": "encoded",
+        "isshow": false,
+        "value": "97field"
+    },
+    {
+        "field": "tmactlhour",
+        "isshow": false,
+        "value": "98field"
+    }
+]
