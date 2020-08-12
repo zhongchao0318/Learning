@@ -6,205 +6,205 @@ import java.io.Serializable;
 
 
 /**
- * 员工加密后数据
+ * test对象
  */
 @Data
 public class StaffSecret implements Serializable {
-    private String pay_prd_id;              /* 年/月 例子：2020/05 */
+    private String id;
 
     private String setid;
 
-    private String deptid;                  /*  部门id    */
+    private String deptid;
 
-    private String emplid;                  /*  员工编号    */
+    private String emplid;
 
-    private String name;                    /*  员工姓名    */
+    private String name;
 
-    private String account_ec_id;           /*  银行卡号    */
+    private String accountecid;
 
-    private String hire_dt;                 /*  雇佣日期    */
+    private String hiredt;
 
-    private String cg_fix_sal;
+    private String  fixsal;
 
-    private String cg_base_sal;
+    private String  basesal;
 
-    private String cg_posn_sal;
+    private String  posnsal;
 
-    private String cg_tlvl_sal;
+    private String  tlvlsal;
 
-    private String cg_oth_sal;
+    private String  othsal;
 
-    private String cg_alow_coll_sal;
+    private String  alowcollsal;
 
-    private String cg_ngsf_alow_sal;
+    private String  ngsfalowsal;
 
-    private String cg_ltng_alow_sal;
+    private String  ltngalowsal;
 
-    private String cg_posn_alow_sal;
+    private String  posnalowsal;
 
-    private String cg_frth_alow_sal;
+    private String  frthalowsal;
 
-    private String cg_cash_alow_sal;
+    private String  cashalowsal;
 
-    private String cg_eplf_alow_sal;
+    private String  eplfalowsal;
 
-    private String cg_epac_alow_sal;
+    private String  epacalowsal;
 
-    private String cg_nwst_alow_sal;
+    private String  nwstalowsal;
 
-    private String cg_prob_alow_sal;
+    private String  probalowsal;
 
-    private String cg_agen_alow_sal;
+    private String  agenalowsal;
 
-    private String cg_conc_alow_sal;
+    private String  concalowsal;
 
-    private String cg_hgtp_alow_sal;
+    private String  hgtpalowsal;
 
-    private String cg_fklt_alow_sal;
+    private String  fkltalowsal;
 
-    private String cg_dbhd_alow_sal;
+    private String  dbhdalowsal;
 
-    private String cg_meal_alow_sal;
+    private String  mealalowsal;
 
-    private String cg_frsb_alow_sal;
+    private String  frsbalowsal;
 
-    private String cg_lwtp_alow_sal;
+    private String  lwtpalowsal;
 
-    private String cg_supt_alow_sal;
+    private String  suptalowsal;
 
-    private String cg_slbs_alow_sal;
+    private String  slbsalowsal;
 
-    private String cg_dppb_alow_sal;
+    private String  dppbalowsal;
 
-    private String cg_pras_alow_sal;
+    private String  prasalowsal;
 
-    private String cg_spop_alow_sal;
+    private String  spopalowsal;
 
-    private String cg_inno_alow_sal;
+    private String  innoalowsal;
 
-    private String cg_fglg_alow_sal;
+    private String  fglgalowsal;
 
-    private String cg_oth1_alow_sal;
+    private String  oth1alowsal;
 
-    private String cg_oth2_alow_sal;
+    private String  oth2alowsal;
 
-    private String cg_oth3_alow_sal;
+    private String  oth3alowsal;
 
-    private String cg_oth4_alow_sal;
+    private String  oth4alowsal;
 
-    private String cg_oth5_alow_sal;
+    private String  oth5alowsal;
 
-    private String cg_oth6_alow_sal;
+    private String  oth6alowsal;
 
-    private String cg_bons_coll_sal;
+    private String  bonscollsal;
 
-    private String cg_cash_bons_sal;
+    private String  cashbonssal;
 
-    private String cg_slpt_bons_sal;
+    private String  slptbonssal;
 
-    private String cg_clpf_bons_sal;
+    private String  clpfbonssal;
 
-    private String cg_gppu_bons_sal;
+    private String  gppubonssal;
 
-    private String cg_flot_bons_sal;
+    private String  flotbonssal;
 
-    private String cg_ivpr_bons_sal;
+    private String  ivprbonssal;
 
-    private String cg_qtpf_bons_sal;
+    private String  qtpfbonssal;
 
-    private String cg_flat_bons_sal;
+    private String  flatbonssal;
 
-    private String cg_cscp_bons_sal;
+    private String  cscpbonssal;
 
-    private String cg_spsh_bons_sal;
+    private String  spshbonssal;
 
-    private String cg_oth1_bons_sal;
+    private String  oth1bonssal;
 
-    private String cg_oth2_bons_sal;
+    private String  oth2bonssal;
 
-    private String cg_oth3_bons_sal;
+    private String  oth3bonssal;
 
-    private String cg_psf1_bons_sal;
+    private String  psf1bonssal;
 
-    private String cg_psf2_bons_sal;
+    private String  psf2bonssal;
 
-    private String cg_psf3_bons_sal;
+    private String  psf3bonssal;
 
-    private String cg_pac1_bons_sal;
+    private String  pac1bonssal;
 
-    private String cg_pac2_bons_sal;
+    private String  pac2bonssal;
 
-    private String cg_pac3_bons_sal;
+    private String  pac3bonssal;
 
-    private String cg_cumn_ovtm_sal;
+    private String  cumnovtmsal;
 
-    private String cg_wkdy_ovtm_sal;
+    private String  wkdyovtmsal;
 
-    private String cg_wknd_ovtm_sal;
+    private String  wkndovtmsal;
 
-    private String cg_hoil_ovtm_sal;
+    private String  hoilovtmsal;
 
-    private String cg_lave_detc_sal;
+    private String  lavedetcsal;
 
-    private String cg_aslv_detc_sal;
+    private String  aslvdetcsal;
 
-    private String cg_sklv_detc_sal;
+    private String  sklvdetcsal;
 
-    private String cg_anlv_detc_sal;
+    private String  anlvdetcsal;
 
-    private String cg_ngwk_detc_sal;
+    private String  ngwkdetcsal;
 
-    private String cg_accd_incm_sal;
+    private String  accdincmsal;
 
-    private String cg_serv_incm_sal;
+    private String  servincmsal;
 
-    private String cg_ohdi_coll_sal;
+    private String  ohdicollsal;
 
-    private String cg_ecnc_comp_sal;
+    private String  ecnccompsal;
 
-    private String cg_medl_comp_sal;
+    private String  medlcompsal;
 
-    private String cg_othe_supl_sal;
+    private String  othesuplsal;
 
-    private String cg_othe_detc_sal;
+    private String  othedetcsal;
 
-    private String cg_slir_per_sal;
+    private String  slirpersal;
 
-    private String cg_pacc_per_sal;
+    private String  paccpersal;
 
-    private String cg_annl_lump_sal;
+    private String  annllumpsal;
 
-    private String cg_thir_pay_sal;
+    private String  thirpaysal;
 
-    private String cg_annl_bons_sal;
+    private String  annlbonssal;
 
-    private String cg_bftx_sum_tax_sal;
+    private String  bftxsumtaxsal;
 
-    private String cg_pert_sum_tax_sal;
+    private String  pertsumtaxsal;
 
-    private String cg_pers_incm_tax_sal;
+    private String  persincmtaxsal;
 
-    private String cg_accd_incm_tax_sal;
+    private String  accdincmtaxsal;
 
-    private String cg_serv_tax_sal;
+    private String  servtaxsal;
 
-    private String cg_annl_bons_tax_sal;
+    private String  annlbonstaxsal;
 
-    private String cg_aftx_indc_sal;
+    private String  aftxindcsal;
 
-    private String cg_ecnc_comp_ntx_sal;
+    private String  ecnccompntxsal;
 
-    private String cg_aftx_incm_sal;
+    private String  aftxincmsal;
 
-    private String cg_aftx_detc_sal;
+    private String  aftxdetcsal;
 
-    private String cg_trad_sal;
+    private String  tradsal;
 
-    private String cg_tai_ai_fund_sal;
+    private String  taiaifundsal;
 
-    private String cg_net_pay_sal;
+    private String  netpaysal;
 
-    private String encoded;                     /*加密标识 T未加密 S已加密*/
+    private String encoded;
 
-    private String cg_tm_actl_hour;
+    private String  tmactlhour;
 }
