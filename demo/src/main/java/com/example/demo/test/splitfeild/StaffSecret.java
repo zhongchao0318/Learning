@@ -24,185 +24,185 @@ public class StaffSecret implements Serializable {
 
     private String hiredt;
 
-    private String  fixsal;
+    private String  fix;
 
-    private String  basesal;
+    private String  base;
 
-    private String  posnsal;
+    private String  posn;
 
-    private String  tlvlsal;
+    private String  tlvl;
 
-    private String  othsal;
+    private String  oth;
 
-    private String  alowcollsal;
+    private String  alowcoll;
 
-    private String  ngsfalowsal;
+    private String  ngsfa;
 
-    private String  ltngalowsal;
+    private String  ltnga;
 
-    private String  posnalowsal;
+    private String  posna;
 
-    private String  frthalowsal;
+    private String  frtha;
 
-    private String  cashalowsal;
+    private String  casha;
 
-    private String  eplfalowsal;
+    private String  eplfa;
 
-    private String  epacalowsal;
+    private String  epaca;
 
-    private String  nwstalowsal;
+    private String  nwsta;
 
-    private String  probalowsal;
+    private String  proba;
 
-    private String  agenalowsal;
+    private String  agena;
 
-    private String  concalowsal;
+    private String  conca;
 
-    private String  hgtpalowsal;
+    private String  hgtpa;
 
-    private String  fkltalowsal;
+    private String  fklta;
 
-    private String  dbhdalowsal;
+    private String  dbhda;
 
-    private String  mealalowsal;
+    private String  meala;
 
-    private String  frsbalowsal;
+    private String  frsba;
 
-    private String  lwtpalowsal;
+    private String  lwtpa;
 
-    private String  suptalowsal;
+    private String  supta;
 
-    private String  slbsalowsal;
+    private String  slbsa;
 
-    private String  dppbalowsal;
+    private String  dppba;
 
-    private String  prasalowsal;
+    private String  prasa;
 
-    private String  spopalowsal;
+    private String  spopa;
 
-    private String  innoalowsal;
+    private String  innoa;
 
-    private String  fglgalowsal;
+    private String  fglga;
 
-    private String  oth1alowsal;
+    private String  oth1a;
 
-    private String  oth2alowsal;
+    private String  oth2a;
 
-    private String  oth3alowsal;
+    private String  oth3a;
 
-    private String  oth4alowsal;
+    private String  oth4a;
 
-    private String  oth5alowsal;
+    private String  oth5a;
 
-    private String  oth6alowsal;
+    private String  oth6a;
 
-    private String  bonscollsal;
+    private String  bonscoll;
 
-    private String  cashbonssal;
+    private String  cashbons;
 
-    private String  slptbonssal;
+    private String  slptbons;
 
-    private String  clpfbonssal;
+    private String  clpfbons;
 
-    private String  gppubonssal;
+    private String  gppubons;
 
-    private String  flotbonssal;
+    private String  flotbons;
 
-    private String  ivprbonssal;
+    private String  ivprbons;
 
-    private String  qtpfbonssal;
+    private String  qtpfbons;
 
-    private String  flatbonssal;
+    private String  flatbons;
 
-    private String  cscpbonssal;
+    private String  cscpbons;
 
-    private String  spshbonssal;
+    private String  spshbons;
 
-    private String  oth1bonssal;
+    private String  oth1bons;
 
-    private String  oth2bonssal;
+    private String  oth2bons;
 
-    private String  oth3bonssal;
+    private String  oth3bons;
 
-    private String  psf1bonssal;
+    private String  psf1bons;
 
-    private String  psf2bonssal;
+    private String  psf2bons;
 
-    private String  psf3bonssal;
+    private String  psf3bons;
 
-    private String  pac1bonssal;
+    private String  pac1bons;
 
-    private String  pac2bonssal;
+    private String  pac2bons;
 
-    private String  pac3bonssal;
+    private String  pac3bons;
 
-    private String  cumnovtmsal;
+    private String  cumnovtm;
 
-    private String  wkdyovtmsal;
+    private String  wkdyovtm;
 
-    private String  wkndovtmsal;
+    private String  wkndovtm;
 
-    private String  hoilovtmsal;
+    private String  hoilovtm;
 
-    private String  lavedetcsal;
+    private String  lavedetc;
 
-    private String  aslvdetcsal;
+    private String  aslvdetc;
 
-    private String  sklvdetcsal;
+    private String  sklvdetc;
 
-    private String  anlvdetcsal;
+    private String  anlvdetc;
 
-    private String  ngwkdetcsal;
+    private String  ngwkdetc;
 
-    private String  accdincmsal;
+    private String  accdincm;
 
-    private String  servincmsal;
+    private String  servincm;
 
-    private String  ohdicollsal;
+    private String  ohdicoll;
 
-    private String  ecnccompsal;
+    private String  ecnccomp;
 
-    private String  medlcompsal;
+    private String  medlcomp;
 
-    private String  othesuplsal;
+    private String  othesupl;
 
-    private String  othedetcsal;
+    private String  othedetc;
 
-    private String  slirpersal;
+    private String  slirper;
 
-    private String  paccpersal;
+    private String  paccper;
 
-    private String  annllumpsal;
+    private String  annllump;
 
-    private String  thirpaysal;
+    private String  thirpay;
 
-    private String  annlbonssal;
+    private String  annlbons;
 
-    private String  bftxsumtaxsal;
+    private String  bftxsu;
 
-    private String  pertsumtaxsal;
+    private String  pertsu;
 
-    private String  persincmtaxsal;
+    private String  persinc;
 
-    private String  accdincmtaxsal;
+    private String  accdinc;
 
-    private String  servtaxsal;
+    private String  servtax;
 
-    private String  annlbonstaxsal;
+    private String  annlbonstax;
 
-    private String  aftxindcsal;
+    private String  aftxindc;
 
-    private String  ecnccompntxsal;
+    private String  ecnccompntx;
 
-    private String  aftxincmsal;
+    private String  aftxincm;
 
-    private String  aftxdetcsal;
+    private String  aftxdetc;
 
-    private String  tradsal;
+    private String  trad;
 
-    private String  taiaifundsal;
+    private String  taiaifund;
 
-    private String  netpaysal;
+    private String  netpay;
 
     private String encoded;
 
