@@ -13,8 +13,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
+
 /**
- *切面日志
+ * 切面日志
  */
 @Aspect
 @Component
@@ -35,6 +36,7 @@ public class RequestLog {
         log.info("IP:" + CommonUtil.getIpAddress(request));
         // 打印类名和方法名
         log.info("METHOD_NAME: " + joinPoint.getTarget().getClass() + "." + joinPoint.getSignature().getName());
+        log.info("session_id:" + request.getSession().getId());
         Enumeration<String> names = request.getParameterNames();
         String name;
         while (names.hasMoreElements()) {

@@ -9,7 +9,7 @@ import java.io.Serializable;
  * test对象
  */
 @Data
-public class StaffSecret implements Serializable {
+public class ObjectAttr implements Serializable {
     private String id;
 
     private String setid;
