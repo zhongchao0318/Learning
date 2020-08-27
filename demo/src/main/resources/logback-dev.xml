@@ -14,20 +14,21 @@
     <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
             <pattern>
-               %-4d [%thread] %-5level %logger{35} - %msg%n
+                %-4d [%thread] %-5level %logger{35} - %msg%n
             </pattern>
         </encoder>
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
             <fileNamePattern>log/study.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
     </appender>
 
     <root level="info">
-        <appender-ref ref="consoleLog" />
-        <appender-ref ref="fileInfoLog" />
+        <appender-ref ref="consoleLog"/>
+        <appender-ref ref="fileInfoLog"/>
     </root>
 
 </configuration>

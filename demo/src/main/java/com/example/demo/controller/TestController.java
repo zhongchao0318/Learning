@@ -20,13 +20,4 @@ public class TestController {
         return "传入参数" + str;
     }
 
-    public static void main(String[] args) {
-        ObjectAttr obj = null;
-        for (int i = 0; i < 100; i++) {
-            obj = new ObjectAttr();
-        }
-
-
-        System.gc();
-    }
 }
