@@ -1,4 +1,4 @@
-package com.example.demo.utils;
+package com.example.demo.utils.redis.jedis;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

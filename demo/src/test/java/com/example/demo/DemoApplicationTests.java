@@ -2,7 +2,7 @@ package com.example.demo;
 
 import com.alibaba.fastjson.*;
 import com.example.demo.rsa.RsaSecretKey;
-import com.example.demo.utils.RedisUtil;
+import com.example.demo.utils.redis.jedis.RedisUtil;
 import org.jasypt.encryption.StringEncryptor;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -21,13 +21,14 @@ class DemoApplicationTests {
     @Test
     void password() {
         String url = stringEncryptor.encrypt("jdbc:mysql://localhost:3306/demo?useSSL=false");
-        String username = stringEncryptor.encrypt("demo");
-        String password = stringEncryptor.encrypt("123456");
-        logger.info("\nurl:\tENC({})\nusername:\tENC({})\npassword:\tENC({})", url, username, password);
-        String redisUrl = stringEncryptor.encrypt("localhost");
-        String redisPass = stringEncryptor.encrypt("123456");
-        logger.info("\nredis url:\tENC({})\nredis password:\tENC({})", redisUrl, redisPass);
-
+//        String username = stringEncryptor.encrypt("demo");
+//        String password = stringEncryptor.encrypt("123456");
+//        logger.info("\nurl:\tENC({})\nusername:\tENC({})\npassword:\tENC({})", url, username, password);
+//        String redisUrl = stringEncryptor.encrypt("localhost");
+//        String redisPass = stringEncryptor.encrypt("123456");
+//        logger.info("\nredis url:\tENC({})\nredis password:\tENC({})", redisUrl, redisPass);
+//
+//        logger.info("解密：{}", stringEncryptor.decrypt("uuvS9ZTWw1ZiqkmoQCpOzg=="));
     }
 
 
