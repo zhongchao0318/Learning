@@ -9,5 +9,12 @@ import java.util.List;
  */
 public interface MenuService {
 
+    /**
+     * 查询site目录
+     *
+     * @param site
+     * @return
+     */
     List<MenuSimpleDto> getSimpleMenu(String site);
+
 }

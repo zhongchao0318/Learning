@@ -18,10 +18,10 @@ import java.net.UnknownHostException;
  * @Date 2020/9/1 17:06
  * @Version 1.0
  */
-@Configuration
+//@Configuration
 public class RedisConfig {
 
-    @Bean
+//    @Bean
     @SuppressWarnings("all")
     public RedisTemplate<String, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory)
             throws UnknownHostException {

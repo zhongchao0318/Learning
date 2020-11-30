@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.annotation.Resource;
+
 @SpringBootTest
 class DemoApplicationTests {
 
@@ -20,19 +22,12 @@ class DemoApplicationTests {
 
     @Test
     void password() {
-        String url = stringEncryptor.encrypt("jdbc:mysql://localhost:3306/demo?useSSL=false");
-//        String username = stringEncryptor.encrypt("demo");
-//        String password = stringEncryptor.encrypt("123456");
-//        logger.info("\nurl:\tENC({})\nusername:\tENC({})\npassword:\tENC({})", url, username, password);
-//        String redisUrl = stringEncryptor.encrypt("localhost");
-//        String redisPass = stringEncryptor.encrypt("123456");
-//        logger.info("\nredis url:\tENC({})\nredis password:\tENC({})", redisUrl, redisPass);
-//
-//        logger.info("解密：{}", stringEncryptor.decrypt("uuvS9ZTWw1ZiqkmoQCpOzg=="));
+
+
     }
 
 
-    @Autowired
+    @Resource
     private RedisUtil redisUtil;
 
     @Test
