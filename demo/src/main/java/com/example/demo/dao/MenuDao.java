@@ -8,6 +8,6 @@ import java.util.List;
 /**
  * 目录dao
  */
-public interface MenuDao {
+public interface MenuDao extends JpaRepository<MenuInfo, String> {
     List<MenuInfo> findBySiteAndShow(String site, boolean isShow);
 }
