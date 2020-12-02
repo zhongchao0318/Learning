@@ -1,5 +1,8 @@
 package com.example.demo.schedule;
 
+import cn.hutool.http.HttpUtil;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.example.demo.dao.LuckBallDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,28 +32,62 @@ public class ReptileLuckBall {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     private static final SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private static final Calendar CALENDAR = Calendar.getInstance();
-
+    private String numberStr = "";
     @Autowired
     LuckBallDao luckBallDao;
 
     @PostConstruct
-    private void setDate() {//设置初始日期
-        CALENDAR.set(Calendar.MONTH, 10);//设置月
-        CALENDAR.set(Calendar.DATE, 28);//设置日期
-        List<String> timeList = new ArrayList<>();
-        for (int i = 0; i < (52 * 4) - 4; i++) {
-            timeList.add(sdf.format(CALENDAR.getTime()));
-            CALENDAR.set(CALENDAR.DATE, CALENDAR.get(CALENDAR.DATE) - 3);//周三
-            timeList.add(sdf.format(CALENDAR.getTime()));
-            CALENDAR.set(CALENDAR.DATE, CALENDAR.get(CALENDAR.DATE) - 2);//周一
-            timeList.add(sdf.format(CALENDAR.getTime()));
-            CALENDAR.set(CALENDAR.DATE, CALENDAR.get(CALENDAR.DATE) - 2);//周六
+    private void setDate() throws InterruptedException {//设置初始日期
+        int year = 2007;
+        int number = 1;//期数
+        boolean flag = true;
+        JSONObject body = new JSONObject();
+        JSONObject param = new JSONObject();
+        String data = "";
+        JSONObject dataJson = null;
+        JSONObject luckJson = null;//luck number 层级
+        while (flag) {
+            data = "";
+            body.clear();
+            param.clear();
+            param.put("GameCode", "DLT");
+            param.put("IssuseNumber", year + "-" + getNumberStr(number));
+            body.put("Param", param);
+            logger.info(body.toString());
+            data = HttpUtil.post(dltUrl, body);
+            dataJson = JSON.parseObject(data);
+            //发送请求
+            if (null == dataJson.get("Value")) {
+                number = 1;
+                year++;
+            } else {
+                luckJson = dataJson.getJSONObject("Value").getJSONObject("PreIssuseInfo");
+                if ("".equals(luckJson.getString("WinNumber"))) {//空值，说明这一年的结束了，不晓得他为啥还要存个空值
+                    number = 1;
+                    year++;
+                } else {//处理正确返回的数据
+                    String luckNumberArr = luckJson.getString("WinNumber");
+                    //首先分开红蓝球
+                    number++;
+                }
+            }
+            Thread.sleep(1000);
+            if (year == 2020 && number == 122) {
+                flag = false;
+            }
         }
-        System.out.println("开奖次数：" + timeList.size());
-        String[] dateArr = null;
-        for (String str : timeList) {
-//            dateArr=str.split();
+    }
+
+    private String getNumberStr(int number) {
+        numberStr = "";
+        if (number < 10) {
+            numberStr = "00" + number;
+        } else if (number < 100) {
+            numberStr = "0" + number;
+        } else {
+            numberStr = "" + number;
         }
+        return numberStr;
     }
 
     @Scheduled(cron = "0 0 23 * * Mon,Wed,Sat")
