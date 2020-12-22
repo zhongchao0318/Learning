@@ -20,7 +20,7 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
-            <fileNamePattern>log/study.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>logs/dream/dream.%d{yyyy-MM-dd}.log</fileNamePattern>
             <cleanHistoryOnStart>true</cleanHistoryOnStart>
             <maxHistory>30</maxHistory>
         </rollingPolicy>

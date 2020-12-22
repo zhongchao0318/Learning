@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 import java.io.Serializable;
 
@@ -13,6 +14,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "menuinfo")
 @Data
+@IdClass(BaseEntity.class)
 public class MenuInfo extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -6766726833522066159L;

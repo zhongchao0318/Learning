@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -14,8 +15,9 @@ import java.util.Date;
  */
 @MappedSuperclass
 @Data
-public class BaseEntity {
+public class BaseEntity implements Serializable {
 
+    private static final long serialVersionUID = -2688494701931540700L;
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name = "system-uuid", strategy = "uuid")
