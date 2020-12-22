@@ -5,6 +5,8 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
+ * 号码出现次数
+ *
  * @Author: zc
  * @Date: 2020/12/15 16:55
  */
