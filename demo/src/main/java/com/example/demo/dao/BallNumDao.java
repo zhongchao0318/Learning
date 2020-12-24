@@ -15,4 +15,6 @@ public interface BallNumDao extends JpaRepository<BallNum, Integer> {
     List<BallNum> findAllByYear(String year);
 
     List<BallNum> findAllByYearAndStatus(String year, Integer status);
+
+    List<BallNum> findAllByYearAndStatusOrderByLuckCountDesc(String year, Integer status);
 }

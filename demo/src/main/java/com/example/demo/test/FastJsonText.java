@@ -2,6 +2,8 @@ package com.example.demo.test;
 
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.*;
+
 /**
  * @Author: zc
  * @Date: 2020/12/7 16:02
@@ -9,9 +11,6 @@ import com.alibaba.fastjson.JSONObject;
 public class FastJsonText {
 
     public static void main(String[] args) {
-        JSONObject json = new JSONObject();
-        String a = json.getString("aaa");
-        System.out.println("".equals(a));
 
     }
 

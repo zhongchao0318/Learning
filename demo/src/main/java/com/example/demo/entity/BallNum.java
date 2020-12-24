@@ -24,7 +24,7 @@ public class BallNum {
     private Integer status;
     //出现次数
     @Column(name = "luck_count")
-    private Integer luck_count;
+    private Integer luckCount;
     //每年的次数，如果是总出现次数，年份为total
     @Column(name = "year")
     private String year;

@@ -10,12 +10,12 @@ import lombok.Data;
  */
 @Data
 public class BallNumDto {
-    private Integer id;
+    //    private Integer id;
     private String number;
     //0.red 1.blue
-    private Integer status;
+//    private Integer status;
     //出现次数
-    private Integer luck_count;
+    private Integer luckCount;
     //每年的次数，如果是总出现次数，年份为total
     private String year;
 }

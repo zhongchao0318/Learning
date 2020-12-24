@@ -22,7 +22,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -352,13 +351,13 @@ public class ReptileLuckBall {
                     || dto.getRedFour().equals(ballNum.getNumber())
                     || dto.getRedFive().equals(ballNum.getNumber())
             ) {
-                ballNum.setLuck_count(ballNum.getLuck_count() + 1);
+                ballNum.setLuckCount(ballNum.getLuckCount() + 1);
             }
         }
 
         for (BallNum ballNum : blueTotals) {//bule
             if (dto.getBlueOne().equals(ballNum.getNumber()) || dto.getBlueTwo().equals(ballNum.getNumber())) {
-                ballNum.setLuck_count(ballNum.getLuck_count() + 1);
+                ballNum.setLuckCount(ballNum.getLuckCount() + 1);
             }
         }
         ballNumDao.saveAll(redTotals);
@@ -383,13 +382,13 @@ public class ReptileLuckBall {
                     || luckBall.getRedFour().equals(ballNum.getNumber())
                     || luckBall.getRedFive().equals(ballNum.getNumber())
             ) {
-                ballNum.setLuck_count(ballNum.getLuck_count() + 1);
+                ballNum.setLuckCount(ballNum.getLuckCount() + 1);
             }
         }
 
         for (BallNum ballNum : blueList) {//bule
             if (luckBall.getBlueOne().equals(ballNum.getNumber()) || luckBall.getBlueTwo().equals(ballNum.getNumber())) {
-                ballNum.setLuck_count(ballNum.getLuck_count() + 1);
+                ballNum.setLuckCount(ballNum.getLuckCount() + 1);
             }
         }
         result.addAll(redList);
@@ -407,7 +406,7 @@ public class ReptileLuckBall {
         List<BallNum> list = new ArrayList<>();
         for (int j = 1; j < 36; j++) {//red
             ballNum = new BallNum();
-            ballNum.setLuck_count(0);
+            ballNum.setLuckCount(0);
             ballNum.setNumber(getNumberStr(j));
             ballNum.setStatus(0);
             ballNum.setYear(year + "");
@@ -415,7 +414,7 @@ public class ReptileLuckBall {
         }
         for (int j = 1; j < 13; j++) {
             ballNum = new BallNum();
-            ballNum.setLuck_count(0);
+            ballNum.setLuckCount(0);
             ballNum.setNumber(getNumberStr(j));
             ballNum.setStatus(1);
             ballNum.setYear(year + "");

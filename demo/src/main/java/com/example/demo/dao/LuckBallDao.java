@@ -11,4 +11,5 @@ import java.util.List;
  */
 public interface LuckBallDao extends JpaRepository<LuckBall, String> {
     List<LuckBall> findAllByCycleBetween(String startCycle, String endCycle);
+    
 }
