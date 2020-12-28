@@ -1,6 +1,6 @@
 package com.example.demo.dao;
 
-import com.example.demo.entity.CycleRecord;
+import com.example.demo.entity.luck.CycleRecord;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

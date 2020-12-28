@@ -1,6 +1,6 @@
 package com.example.demo.dao;
 
-import com.example.demo.entity.Reptiles;
+import com.example.demo.entity.luck.Reptiles;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

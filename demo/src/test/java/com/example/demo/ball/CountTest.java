@@ -2,7 +2,7 @@ package com.example.demo.ball;
 
 import com.example.demo.dao.BallNumDao;
 import com.example.demo.dto.LuckBallSimpleDto;
-import com.example.demo.entity.BallNum;
+import com.example.demo.entity.luck.BallNum;
 import com.example.demo.service.luck.LuckBallService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;

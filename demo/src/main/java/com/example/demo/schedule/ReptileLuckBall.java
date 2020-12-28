@@ -8,10 +8,10 @@ import com.example.demo.dao.CycleRecordDao;
 import com.example.demo.dao.LuckBallDao;
 import com.example.demo.dao.ReptileesDao;
 import com.example.demo.dto.LuckBallSimpleDto;
-import com.example.demo.entity.BallNum;
-import com.example.demo.entity.CycleRecord;
-import com.example.demo.entity.LuckBall;
-import com.example.demo.entity.Reptiles;
+import com.example.demo.entity.luck.BallNum;
+import com.example.demo.entity.luck.CycleRecord;
+import com.example.demo.entity.luck.LuckBall;
+import com.example.demo.entity.luck.Reptiles;
 import com.example.demo.service.luck.LuckBallService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -241,7 +241,7 @@ public class ReptileLuckBall {
     private void getTodayDTL() throws InterruptedException {
         //https://webapi.sporttery.cn/gateway/lottery/getHistoryPageListV1.qry?gameNo=85&provinceId=0&pageSize=1&isVerify=1&pageNo=1&startTerm=20128&endTerm=20128
         String url = "https://webapi.sporttery.cn/gateway/lottery/getHistoryPageListV1.qry";
-        logger.info("指定时间执行：", sdf2.format(Calendar.getInstance().getTime()));
+        logger.info("指定时间执行：{}", sdf2.format(Calendar.getInstance().getTime()));
         logger.info("当前时间：{}", Calendar.getInstance().getTime());
         CycleRecord record = recordDao.findByStatus(0);//上一次获取记录
         int year = record.getYear();
@@ -424,6 +424,6 @@ public class ReptileLuckBall {
     }
 
     private Date getSysTime() {
-        return Calendar.getInstance(TimeZone.getTimeZone("GMT+8")).getTime();
+        return Calendar.getInstance().getTime();
     }
 }

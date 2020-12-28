@@ -4,7 +4,7 @@ import cn.hutool.poi.excel.ExcelUtil;
 import cn.hutool.poi.excel.ExcelWriter;
 import com.example.demo.dao.BallNumDao;
 import com.example.demo.dto.BallNumDto;
-import com.example.demo.entity.BallNum;
+import com.example.demo.entity.luck.BallNum;
 import com.example.demo.service.luck.BallNumberService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,25 +1,21 @@
-package com.example.demo.utils.threads;
+package com.example.demo.utils.threads.luck;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 /**
  * @Author: zc
- * @Date: 2020/12/24 17:54
+ * @Date: 2020/12/25 9:57
  */
-public class ComposeNumCallable implements Callable<Set<String>> {
-    private Set<String> res = new HashSet<>();
-    private Integer blueOne;
-    private Integer blueTwo;
+public class ComposeStrCallable extends ComposeVariable<String> implements Callable<List<String>> {
 
-    public ComposeNumCallable(Integer one2, Integer two2) {
-        this.blueOne = one2;
-        this.blueTwo = two2;
+
+    public ComposeStrCallable(Integer blueOne, Integer blueTwo) {
+        super(blueOne, blueTwo);
     }
 
     @Override
-    public Set<String> call() throws Exception {
+    public List<String> call() throws Exception {
         StringBuffer temp = null;
         flag_one:
         for (int red = 1; red < 32; red++) {

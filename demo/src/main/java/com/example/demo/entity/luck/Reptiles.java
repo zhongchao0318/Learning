@@ -1,5 +1,6 @@
-package com.example.demo.entity;
+package com.example.demo.entity.luck;
 
+import com.example.demo.entity.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;
