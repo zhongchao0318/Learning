@@ -1,4 +1,4 @@
-package com.example.demo.dao;
+package com.example.demo.dao.luck;
 
 import com.example.demo.entity.luck.BallNum;
 import org.springframework.data.jpa.repository.JpaRepository;

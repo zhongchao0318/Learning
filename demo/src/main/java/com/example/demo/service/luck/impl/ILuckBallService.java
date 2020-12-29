@@ -1,6 +1,6 @@
 package com.example.demo.service.luck.impl;
 
-import com.example.demo.dao.LuckBallDao;
+import com.example.demo.dao.luck.LuckBallDao;
 import com.example.demo.dto.LuckBallSimpleDto;
 import com.example.demo.entity.luck.LuckBall;
 import com.example.demo.service.luck.LuckBallService;

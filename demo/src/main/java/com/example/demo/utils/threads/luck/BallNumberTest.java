@@ -16,10 +16,6 @@ public class BallNumberTest {
 
         long startTime = Calendar.getInstance().getTimeInMillis();
         List<String> res = getNumStr();
-        for (int i = 0; i < res.size(); i++) {
-
-        }
-
         System.out.println("size:" + res.size());
         long endTime = Calendar.getInstance().getTimeInMillis();
         System.out.println("耗时：" + ((endTime - startTime) / 1000));
