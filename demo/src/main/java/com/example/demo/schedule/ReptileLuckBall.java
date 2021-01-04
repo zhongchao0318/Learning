@@ -150,6 +150,16 @@ public class ReptileLuckBall {
         return numberStr;
     }
 
+    private String getNumberStr2(int number) {
+        numberStr = "";
+        if (number < 10) {
+            numberStr = "0" + number;
+        } else if (number < 100) {
+            numberStr = "0" + number;
+        }
+        return numberStr;
+    }
+
     //    @Scheduled(cron = "0 0 23 * * Mon,Wed,Sat")
     private void getTodayLuckBall() {
         //https://webapi.sporttery.cn/gateway/lottery/getHistoryPageListV1.qry?gameNo=85&provinceId=0&pageSize=1&isVerify=1&pageNo=1&startTerm=20128&endTerm=20128
@@ -407,7 +417,7 @@ public class ReptileLuckBall {
         for (int j = 1; j < 36; j++) {//red
             ballNum = new BallNum();
             ballNum.setLuckCount(0);
-            ballNum.setNumber(getNumberStr(j));
+            ballNum.setNumber(getNumberStr2(j));
             ballNum.setStatus(0);
             ballNum.setYear(year + "");
             list.add(ballNum);
@@ -415,7 +425,7 @@ public class ReptileLuckBall {
         for (int j = 1; j < 13; j++) {
             ballNum = new BallNum();
             ballNum.setLuckCount(0);
-            ballNum.setNumber(getNumberStr(j));
+            ballNum.setNumber(getNumberStr2(j));
             ballNum.setStatus(1);
             ballNum.setYear(year + "");
             list.add(ballNum);

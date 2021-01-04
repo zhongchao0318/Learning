@@ -74,11 +74,12 @@ public class CountTest {
      */
     @Test
     void countBallByTotal() {
+        logger.info(">>>>>>>>>>start>>>>>>>>>>>>>>");
         List<LuckBallSimpleDto> luckList = luckBallService.findAll();
         List<BallNum> redList = ballNumDao.findAllByYearAndStatus("total", 0);
         List<BallNum> blueList = ballNumDao.findAllByYearAndStatus("total", 1);
         for (LuckBallSimpleDto dto : luckList) {
-            logger.info(dto.toString());
+//            logger.info(dto.toString());
             for (BallNum ballNum : redList) {//red
                 if (dto.getRedOne().equals(ballNum.getNumber())
                         || dto.getRedTwo().equals(ballNum.getNumber())
@@ -98,7 +99,8 @@ public class CountTest {
         }
         ballNumDao.saveAll(redList);
         ballNumDao.saveAll(blueList);
-        countBallByYear();
+        logger.info(">>>>>>>>>>end>>>>>>>>>>>>>>");
+        //countBallByYear();
     }
 
     /**
@@ -173,14 +175,14 @@ public class CountTest {
     /**
      * 总计校验
      */
-//    @Test
+    @Test
     void checkCountBallByTotal() {
         List<BallNum> list = ballNumDao.findAllByYear("total");
         int i = 0;
         for (BallNum ballNum : list) {
             i = i + ballNum.getLuckCount();
         }
-        logger.info("i:{}", i);
+        logger.info("i:{}", i / 7);
     }
 
 
