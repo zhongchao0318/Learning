@@ -1,5 +1,6 @@
 package com.example.demo.ball;
 
+import com.example.demo.utils.MyThreadCoolUtils;
 import com.example.demo.utils.threads.luck.ComposeObjCallable;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -16,7 +17,7 @@ import java.util.concurrent.*;
 @SpringBootTest
 public class CompostTests {
     private static final Logger logger = LoggerFactory.getLogger(CompostTests.class);
-    private static final ExecutorService executorService = Executors.newFixedThreadPool(5);
+    //private static final ExecutorService executorService = Executors.newFixedThreadPool(5);
 
     @Test
     void getNumStr() {
@@ -24,7 +25,7 @@ public class CompostTests {
         logger.info("开始时间：{}", startTime);
         int res = 0;
         Callable<Integer> callable = null;
-        CompletionService<Integer> completionService = new ExecutorCompletionService<>(executorService);
+        CompletionService<Integer> completionService = new ExecutorCompletionService<>(MyThreadCoolUtils.getExecutor());
         int count = 0;
         for (int blue = 1; blue < 12; blue++) {
             for (int blue2 = blue + 1; blue2 < 13; blue2++) {
@@ -37,14 +38,14 @@ public class CompostTests {
         try {
             for (int i = 0; i < count; i++) {
                 res = res + (completionService.take().get());
-                logger.info("res:{}",res);
+                logger.info("res:{}", res);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        executorService.shutdown();
+//        executorService.shutdown();
         long endTime = Calendar.getInstance().getTimeInMillis();
         logger.info("总耗时：{}", (endTime - startTime) / 60000);
     }

@@ -21,14 +21,14 @@ public class PsServiceTest {
         JSONObject root = new JSONObject();
         JSONObject requestdata = new JSONObject();
         JSONObject data = new JSONObject();
-        data.put("oa_id", "sysadmin");
+        data.put("oa_id", "0");
         data.put("abs_type", "ANN");
         data.put("emplid", "100000416");
         data.put("empl_rcd", "0");
         data.put("bgn_dt", "2021-12-28");
         data.put("end_dt", "2021-12-30");
         data.put("bgn_half", "N");
-        data.put("end_hal", "N");
+        data.put("end_half", "N");
         data.put("abs_day", "3");
         requestdata.put("data", data);
         root.put("requestdata", requestdata);
@@ -36,7 +36,7 @@ public class PsServiceTest {
         xmlStr = xmlHead() + param.toJSONString() + xmlTail();
         System.out.println(xmlStr);
         System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        String psPath = "http://200.4.0.65:8000/";
+        String psPath = "http://200.4.0.64:8000/";
         String send = HttpRequest.post(psPath + "PSIGW/PeopleSoftServiceListeningConnector/PSFT_HR")
                 .header("Content-Type", "text/xml;charset=UTF-8")
                 .header("SOAPAction", "GC_OA_ABS_EDIT.v1")
@@ -47,6 +47,7 @@ public class PsServiceTest {
         Document doc = XmlUtil.parseXml(send);
         NodeList nodeList = doc.getElementsByTagName("GC_INTF_RESPONSE");
         JSONObject returnJson = element(nodeList);
+        System.out.println(returnJson.getJSONObject("root").getJSONObject("responsedata").toJSONString());
     }
 
     public static JSONObject element(NodeList list) {
@@ -63,10 +64,10 @@ public class PsServiceTest {
                     returnJson = JSON.parseObject(childNodes.item(j).getFirstChild().getNodeValue());
                 }
             }
+
         }
         System.out.println(returnJson.toJSONString());
         return returnJson;
-
     }
 
     public static void node(NodeList list) {

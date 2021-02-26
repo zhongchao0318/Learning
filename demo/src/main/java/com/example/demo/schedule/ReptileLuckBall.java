@@ -154,8 +154,8 @@ public class ReptileLuckBall {
         numberStr = "";
         if (number < 10) {
             numberStr = "0" + number;
-        } else if (number < 100) {
-            numberStr = "0" + number;
+        } else {
+            numberStr = "" + number;
         }
         return numberStr;
     }

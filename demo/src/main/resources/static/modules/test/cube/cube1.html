@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        overflow: hidden;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    }
+
+    section .color {
+        position: absolute;
+        filter: blur(150px);
+    }
+
+    section .color:nth-child(1) {
+        top: -350px;
+        width: 600px;
+        height: 600px;
+        background: #ff359b;
+    }
+
+    section .color:nth-child(2) {
+        bottom: -150px;
+        left: 100px;
+        width: 500px;
+        height: 500px;
+        background: #fffd87;
+    }
+
+    section .color:nth-child(3) {
+        bottom: 50px;
+        right: 100px;
+        width: 300px;
+        height: 300px;
+        background: #00d2ff;
+    }
+
+    .cube {
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border: 0px solid black;
+        transform: translate(-50%, -50%) rotateX(60deg) rotateY(30deg) rotateZ(120deg);
+        transform-style: preserve-3d;
+    }
+
+    .cube div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        font-weight: bold;
+
+    }
+
+    .cube:hover {
+        transform: translate(-50%, -50%) rotateX(145deg) rotateY(45deg) rotateZ(105deg);
+        transition: all 5s;
+    }
+
+    .face1 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateY(-125px) rotateX(90deg);
+    }
+
+    .face2 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateX(-125px) rotateY(90deg);
+    }
+
+    .face3 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateZ(-125px);
+    }
+
+    .face4 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateY(125px) rotateX(90deg);
+    }
+
+    .face5 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateX(125px) rotateY(90deg);
+    }
+
+    .face6 {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: translate(-50%, -50%) translateZ(125px);
+    }
+</style>
+<body>
+<section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="cube">
+        <div class="face1"></div>
+        <div class="face2"></div>
+        <div class="face3"></div>
+        <div class="face4"></div>
+        <div class="face5"></div>
+        <div class="face6"></div>
+    </div>
+</section>
+
+
+</body>
+</html>
