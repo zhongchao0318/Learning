@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import cn.hutool.http.HttpUtil;
 import com.alibaba.fastjson.*;
 import com.example.demo.rsa.RsaSecretKey;
 import com.example.demo.utils.redis.jedis.RedisUtil;
@@ -22,7 +23,8 @@ class DemoApplicationTests {
 
     @Test
     void password() {
-     
+        String data = HttpUtil.get("http://200.4.20.128:22222/oaapi/workflow/node/current/operator/3160748");
+        logger.info(data);
     }
 
 

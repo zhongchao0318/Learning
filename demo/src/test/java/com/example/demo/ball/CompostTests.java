@@ -11,13 +11,15 @@ import java.util.Calendar;
 import java.util.concurrent.*;
 
 /**
+ * 将所有对象存入数据库，太慢了
+ *
  * @Author: zc
  * @Date: 2020/12/28 14:27
  */
 @SpringBootTest
 public class CompostTests {
     private static final Logger logger = LoggerFactory.getLogger(CompostTests.class);
-    //private static final ExecutorService executorService = Executors.newFixedThreadPool(5);
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(5);
 
     @Test
     void getNumStr() {

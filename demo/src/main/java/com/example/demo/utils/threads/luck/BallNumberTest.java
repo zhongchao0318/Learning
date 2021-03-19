@@ -22,6 +22,7 @@ public class BallNumberTest {
 
     }
 
+    //生成所有的可能
     private static List<String> getNumStr() {
         List<String> res = new ArrayList<>();
         Callable<List<String>> callable = null;
