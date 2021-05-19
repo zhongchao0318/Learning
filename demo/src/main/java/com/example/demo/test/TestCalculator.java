@@ -19,11 +19,7 @@ public class TestCalculator {
     public static int add(int a, int b) {
         // 得到原位和
         int xor = a ^ b;
-        System.out.println(Integer.toBinaryString(a ^ b));
-        // 得到进位和
         int forWoad = (a & b) << 1;
-        System.out.println(Integer.toBinaryString(a & b));
-        System.out.println(Integer.toBinaryString((a & b) << 1));
         return forWoad == 0 ? xor : add(xor, forWoad);
     }
 
