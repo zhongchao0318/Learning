@@ -46,7 +46,7 @@
     >
       <span>请输入账号和密码</span>
       <span slot="footer" class="dialog-footer">
-                <el-button type="primary" @click="dialogVisible=false">确认</el-button>
+                <el-button class="fix-button" type="primary" @click="dialogVisible=false">确认</el-button>
               </span>
     </el-dialog>
   </div>
@@ -90,7 +90,9 @@
 </script>
 
 <style scoped>
-
+  .fix-button{
+    padding: 12px 20px;
+  }
   * {
     margin: 0;
     padding: 0;
