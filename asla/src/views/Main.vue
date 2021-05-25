@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-header>
-
+      {{name}}
     </el-header>
     <el-container>
       <el-aside width="200px">
@@ -30,7 +30,8 @@
           </el-submenu>
           <el-menu-item index="2">
             <i class="el-icon-menu"></i>
-            <router-link to="/user/profile">个人信息</router-link>
+            <!--name传地组件名 params是传递参数-->
+            <router-link v-bind:to="{name:'UserProfile',params:{id:1}}">个人信息</router-link>
           </el-menu-item>
           <el-menu-item index="3">
             <i class="el-icon-document"></i>
@@ -39,6 +40,9 @@
           <el-menu-item index="4" disabled>
             <i class="el-icon-setting"></i>
             <span slot="title">导航四</span>
+          </el-menu-item>
+          <el-menu-item index="5">
+            <router-link slot="title" to="/goHome">回到首页</router-link>
           </el-menu-item>
         </el-menu>
       </el-aside>
@@ -51,6 +55,7 @@
 
 <script>
     export default {
+        props: ['name'],
         name: "Main",
         methods: {
             handleOpen(key, keyPath) {

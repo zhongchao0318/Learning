@@ -78,7 +78,7 @@
             onSubmit(formName) {
                 this.$refs[formName].validate((valid) => {
                     if (valid) {
-                        this.$router.push("/main");
+                        this.$router.push("/main/" + this.form.username);
                     } else {
                         this.dialogVisible = true;
                         return false;
@@ -90,9 +90,10 @@
 </script>
 
 <style scoped>
-  .fix-button{
+  .fix-button {
     padding: 12px 20px;
   }
+
   * {
     margin: 0;
     padding: 0;
